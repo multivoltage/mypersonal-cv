@@ -1,0 +1,24 @@
+$primaryColor: #F44336;
+$secondaryColor: #4CAF50;
+$grey700: #616161;
+$root-element-font-size: 16px;
+
+// MIXINS ALL IN ONE :(
+@function getRemValue($v) {
+    @if($v == "auto" or $v == "0px" or $v == 0) {
+        @return $v;
+    }
+
+    $remSize: $v / $root-element-font-size;
+    @return #{$remSize}rem;
+}
+
+@function calculateREM($size) {
+    $remSize:
+        getRemValue(nth($size, 1))
+        if(length($size)>1, getRemValue(nth($size, 2)), "")
+        if(length($size)>2, getRemValue(nth($size, 3)), "")
+        if(length($size)>3, getRemValue(nth($size, 4)), "");
+
+    @return #{$remSize};
+}

@@ -1,0 +1,180 @@
+@import './vars';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: $grey700;
+  background: rgb(204,204,204); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.page.sizeA4 {
+  background: white;  
+  height: 22cm;//21cm;
+  width: 31cm;//29.7cm; 
+  margin-bottom: 0.5cm;
+  margin-left: auto;
+  margin-right: auto;
+  // box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.lastPage {
+    margin-top: 0;
+  }
+}
+
+header,
+footer {
+  width: 31cm;
+  height: 3em;
+  background: $primaryColor;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.5em;
+
+  p {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+footer {
+  margin-bottom: 0;
+  margin-top: .5em;
+  font-size: 1.2em;
+  height: 3em;
+  min-height: 3em;
+}
+
+main {
+  margin-top: 1em;
+}
+
+@media print {
+  body, page, main {
+    margin: 0!important;
+    padding: 0!important;
+    box-shadow: 0;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@page {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+ul.list-experiences {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+h2.title {
+  margin-bottom: 1em;
+}
+
+section.projects,
+section.skills,
+section.experiences,
+section.school,
+section.description {
+  font-weight: 500;
+  line-height: 1.5em;
+  width: 70%;
+  margin: 0 auto;
+
+  > p {
+    margin-bottom: 1em;
+    text-align: justify;
+  }
+}
+
+section.school {
+  margin-top: 3em;
+  
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin-right: 2em;
+    }
+  }
+
+  .colum {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+section.skills {
+  margin-top: 2em;
+  width: auto;
+  margin-right: 2em;
+
+  ul.skills-list {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+  }
+
+ span {
+  margin: .5em;
+ } 
+}
+
+section.projects {
+  margin-top: 2em;
+  width: 70%;
+  flex-basis: 70%;
+
+  .project--name {
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  .project--url {
+    margin-right: 1em;
+    color: $secondaryColor;
+  }
+}
+
+// for skills and project
+.row {
+  display: flex;
+}
+
+.row--container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.page2 main {
+  position: relative;
+}
+
+img.firma {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  width: 200px;
+}
