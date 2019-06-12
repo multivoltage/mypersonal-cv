@@ -1,97 +1,98 @@
-@import './vars';
+@import "./vars";
 
 .experience--row {
+  display: flex;
+
+  .line--wrapper {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+    margin-left: 0;
 
-    .line--wrapper {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 1em;
+    &__circle {
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      border: 2px dotted $primaryColor;
+    }
+
+    &__line {
+      border: none;
+      border-left: 2px dotted #f00;
+      color: #fff;
+      background-color: #fff;
+      width: 1px;
+      height: 200px;
+      margin: 1em 0;
+      height: 100px;
+    }
+  }
+
+  .content--wrapper {
+    .material-icons {
+      margin-right: calculateREM(15px);
+      color: $secondaryColor;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      margin-bottom: 0.3em;
+      align-items: flex-start;
+
+      > span {
+        margin-top: calculateREM(4px);
+      }
+    }
+
+    &__job {
+      font-size: 1.2em;
+      color: $primaryColor;
+      font-weight: 500;
+      margin-top: calculateREM(20px);
+      margin-bottom: calculateREM(15px);
+    }
+
+    &__period {
+      margin-top: 2em;
+    }
+
+    ul.skillTags {
+      list-style: none;
+      display: flex;
+
+      span {
+        margin-left: calculateREM(5px);
+        margin-right: calculateREM(5px);
+      }
+      span:first-child {
         margin-left: 0;
-
-        &__circle {
-            width: 4em;
-            height: 4em;
-            border-radius: 50%;
-            border: 2px dotted $primaryColor;
-        }
-
-        &__line {
-            border:none;
-            border-left:2px dotted #f00;
-            color:#fff;
-            background-color:#fff;
-            width: 1px;
-            height: 200px;
-            margin: 1em 0;
-            height: 100px;
-          }
+      }
     }
 
-    .content--wrapper {
+    ul.projects {
+      list-style: none;
+      width: 100%;
 
-        .material-icons {
-            margin-right: calculateREM(15px);
-            color: $secondaryColor;
-        }
+      .project--row {
+        display: flex;
+      }
 
-        p {
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-            margin-bottom: .3em;
-            align-items: flex-start;
+      .projectLink,
+      .projectName {
+        flex-basis: 50%;
+        white-space: nowrap;
+      }
 
-            > span {
-                margin-top: calculateREM(4px);
-            }
-        }
-
-        &__job {
-            font-size: 1.2em;
-            color: $primaryColor;
-            font-weight: 500;
-            margin-top: calculateREM(20px);
-            margin-bottom: calculateREM(15px);
-        }
-
-        &__period {
-            margin-top: 2em;
-        }
-
-        UL.skillTags {
-            list-style: none;
-            display: flex;
-
-            span {
-                margin-left: calculateREM(5px);
-                margin-right: calculateREM(5px);
-            }
-            span:first-child {
-                margin-left: 0;
-            }
-        }
-
-        UL.projects {
-            list-style: none;
-
-            .project--row {
-                display: flex;
-            }
-
-            .projectLink,
-            .projectName {
-                flex-basis: 50%;
-            }
-
-            .projectLink {
-                margin-left: 1em;
-                text-align: right;
-                color: $secondaryColor;
-            }
-        }
+      .projectLink {
+        margin-left: 1em;
+        text-align: right;
+        color: $secondaryColor;
+      }
     }
+  }
 }
