@@ -1,10 +1,10 @@
-@import './vars';
+@import "./vars";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: $grey700;
-  background: rgb(204,204,204); 
+  background: rgb(204, 204, 204);
 }
 
 * {
@@ -18,9 +18,9 @@ body {
 }
 
 .page.sizeA4 {
-  background: white;  
-  height: 22cm;//21cm;
-  width: 31cm;//29.7cm; 
+  background: white;
+  height: 22cm; //21cm;
+  width: 31cm; //29.7cm;
   margin-bottom: 0.5cm;
   margin-left: auto;
   margin-right: auto;
@@ -33,6 +33,12 @@ body {
   &.lastPage {
     margin-top: 0;
   }
+}
+.page.page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 header,
@@ -57,7 +63,7 @@ footer {
 
 footer {
   margin-bottom: 0;
-  margin-top: .5em;
+  margin-top: 0.5em;
   font-size: 1.2em;
   height: 3em;
   min-height: 3em;
@@ -68,9 +74,11 @@ main {
 }
 
 @media print {
-  body, page, main {
-    margin: 0!important;
-    padding: 0!important;
+  body,
+  page,
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
     box-shadow: 0;
     -webkit-print-color-adjust: exact;
   }
@@ -82,7 +90,6 @@ main {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 
 ul.list-experiences {
   margin: 0 auto;
@@ -111,7 +118,7 @@ section.description {
 
 section.school {
   margin-top: 3em;
-  
+
   ul {
     list-style: none;
     display: flex;
@@ -138,9 +145,9 @@ section.skills {
     flex-wrap: wrap;
   }
 
- span {
-  margin: .5em;
- } 
+  span {
+    margin: 0.5em;
+  }
 }
 
 section.projects {

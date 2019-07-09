@@ -16,7 +16,7 @@ export const Me_Info = {
     },
     {
       name: "Degree in computer engineering at Cesena",
-      period: "2013-201"
+      period: "2013-2016"
       //resultTitle: "Degree in computer engineering at Cesena"
     }
   ]
@@ -41,7 +41,7 @@ export const Experiences = [
     shortDescription:
       "development and release of applications installed in fairs and physical stores on behalf of Luxottica",
     longDescription:
-      "I deal mainly with the maintenance of projects developed with React. We build site used on totem and physics devices used in a Luxottica brands stores",
+      "I deal mainly with the maintenance of projects developed with React. The sites are formed by an ui project and an api project. The first one is developed in react and grapql and the second one is developed in express + typescript + redis. The sites are developed for the totem used in a Luxottica brands stores",
     projects: [
       {
         name: "Rayban",
@@ -151,7 +151,9 @@ export const Skills = [
   { tag: "oop", value: 7 },
   { tag: "someThingOfNew-please", value: 7 },
   { tag: "typescript", value: 6 },
-  { tag: "graphQL", value: 7 }
+  { tag: "graphQL", value: 7 },
+  { tag: "redis", value: 7 },
+  { tag: "styled-component", value: 7 }
 ];
 
 export const Projects = [
