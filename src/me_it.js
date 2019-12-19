@@ -3,7 +3,7 @@ export const Me_Info = {
   surname: "Tonini",
   age: 25,
   birthday: "May 1, 1993",
-  location: "Via Tanari 23 Bologna",
+  location: "Milano",
   phone: "+39 3891883138",
   email: "diego.tonini93@gmail.com",
   linkedin: "https://bit.ly/2C9VQQi",
@@ -24,16 +24,36 @@ export const Me_Info = {
 
 export const Experiences = [
   {
-    startDate: "Aprile 2019",
+    startDate: "Gennaio 2020",
     endDate: "Present",
+    jobTitle: "Front-End Developer",
+    agency: "Conio srl",
+    location: "Milano, Italia",
+    skillsTags: [
+      "bitcoint",
+      "crypto",
+      "react",
+      "graphQL",
+      "less",
+      "typescript+"
+    ],
+    shortDescription: "to fill",
+    longDescription: "to fill",
+    projects: []
+  },
+  {
+    startDate: "Aprile 2019",
+    endDate: "Dicembre 2019",
     jobTitle: "Front-End Developer",
     agency: "Abstract",
     location: "Bologna, Italia",
     skillsTags: [
       "react",
+      "vue",
       "js",
       "graphQL",
       "less",
+      "sass",
       "typescript+",
       "redis",
       "WCS"
@@ -44,12 +64,17 @@ export const Experiences = [
       "I deal mainly with the maintenance of projects developed with React. The sites are formed by an ui project and an api project. The first one is developed in react and grapql and the second one is developed in express + typescript + redis. The sites are developed for the totem used in a Luxottica brands stores",
     projects: [
       {
-        name: "Rayban",
+        name: "Rayban (e-commerce)",
+        link: "https://www.ray-ban.com/italy",
+        description: "Frontend release"
+      },
+      {
+        name: "Rayban (totem app)",
         link: "https://www.rbemea.instore.oakley.com/rb/10523/it-IT",
         description: "Maintenance"
       },
       {
-        name: "Salmoiraghi & Vigano",
+        name: "Salmoiraghi & Vigano (totem app)",
         link: "https://www.svemea-dev.instore.oakley.com/sv/10029/it-IT",
         description: "Maintenance"
       }
@@ -130,11 +155,12 @@ export const Experiences = [
 ];
 
 export const Skills = [
-  { tag: "c#", value: 8 },
-  { tag: ".net", value: 7 },
   { tag: "js", value: 7 },
   { tag: "react", value: 7 },
+  { tag: "vue", value: 7 },
   { tag: "redux", value: 7 },
+  { tag: "c#", value: 8 },
+  { tag: ".net", value: 7 },
   { tag: "java", value: 7 },
   { tag: "es6+", value: 7 },
   { tag: "css", value: 7 },
@@ -149,11 +175,11 @@ export const Skills = [
   { tag: "gatsby-js", value: 7 },
   { tag: "jquery", value: 7 },
   { tag: "oop", value: 7 },
-  { tag: "someThingOfNew-please", value: 7 },
   { tag: "typescript", value: 6 },
   { tag: "graphQL", value: 7 },
   { tag: "redis", value: 7 },
-  { tag: "styled-component", value: 7 }
+  { tag: "styled-component", value: 7 },
+  { tag: "someThingOfNew-please", value: 7 }
 ];
 
 export const Projects = [

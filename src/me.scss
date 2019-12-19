@@ -1,62 +1,66 @@
-@import './vars';
+@import "./vars";
 
 .me--row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.4em;
+  margin-top: 2em;
+
+  .colum {
+    flex-grow: 0;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 4em;
-    font-weight: 500;
+    flex-direction: column;
+
+    i {
+      background-size: contain;
+    }
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .imageProfile {
+    border-radius: 50%;
+    border: 2px dotted $primaryColor;
+    padding: 1em;
+  }
+
+  .icon-linkedin {
+    background-image: url("https://freeiconshop.com/wp-content/uploads/edd/linkedin-outline.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  .icon-github {
+    background-image: url("http://www.download82.com/images/produse/iconuri/github-desktop.png");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  .phone,
+  .email,
+  .location,
+  .linkedin,
+  .github {
+    margin: 0.5em;
+    display: flex;
     align-items: center;
-    font-size: 1.4em;
-    margin-top: 2em;
 
-    .colum {
-        flex-grow: 0;
-        display: flex;
-        flex-direction: column;
+    a {
+      text-decoration: none;
+      color: $grey700;
     }
 
-    .row {
-        display: flex;
+    .text {
+      margin-left: 1em;
     }
-
-    .imageProfile {
-        border-radius: 50%;
-        border: 2px dotted $primaryColor;
-        padding: 1em;
-    }
-
-    .icon-linkedin {
-        background-image: url('https://www.fmpr.net/wp-content/plugins/social-media-feather/synved-social/image/social/regular/24x24/linkedin.png');
-        background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-    }
-
-    .icon-github {
-        background-image: url('http://www.download82.com/images/produse/iconuri/github-desktop.png');
-        background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-    }
-
-    .phone,
-    .email,
-    .location,
-    .linkedin,
-    .github {
-        margin: .5em;
-        display: flex;
-        align-items: center;
-
-        a {
-            text-decoration: none;
-            color: $grey700;
-        }
-
-        .text {
-            margin-left: 1em;
-        }
-    }
+  }
 }
