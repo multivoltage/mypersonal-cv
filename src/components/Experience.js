@@ -5,11 +5,13 @@ import '../experience.scss';
 class Experience extends Component {
   render() {
 
-    const { startDate, endDate, jobTitle, agency, location, shortDescription, longDescription, projects = [], skillsTags = [] } = this.props.experience; 
+    const { startDate, endDate, jobTitle, agency, location, shortDescription, longDescription, projects = [], skillsTags = [], logoUrl } = this.props.experience; 
     return (
       <li class="experience--row">
           <div className="line--wrapper">
-            <div className="line--wrapper__circle"/>
+            <div className="line--wrapper__circle">
+              <img src={logoUrl} />
+            </div>
             <div className="line--wrapper__line"/>
           </div>
 

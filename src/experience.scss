@@ -14,9 +14,12 @@
 
     &__circle {
       width: 4em;
-      height: 4em;
-      border-radius: 50%;
+      height: 4em; 
       border: 2px dotted $primaryColor;
+
+      img {
+        width: 100%;
+      }
     }
 
     &__line {

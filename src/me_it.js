@@ -24,26 +24,29 @@ export const Me_Info = {
 
 export const Experiences = [
   {
-    startDate: "Gennaio 2020",
+    startDate: "January 2020",
     endDate: "Present",
     jobTitle: "Front-End Developer",
     agency: "Conio srl",
     location: "Milano, Italia",
     skillsTags: [
-      "bitcoint",
+      "bitcoin",
       "crypto",
       "react",
       "graphQL",
       "less",
-      "typescript+"
+      "typescript+",
+      "react-apollo",
+      "typescript"
     ],
-    shortDescription: "to fill",
-    longDescription: "to fill",
-    projects: []
+    shortDescription: "Responsible for all frontend apps. This include an Admin Panel and the company site",
+    longDescription: "Develop and maintenance of an admin panel in React + GraphQL + Apollo. Sometimes I switch to Android (java) company applicatio (Conio on playtore)",
+    projects: [],
+    logoUrl: "https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/vpnffetwddcypsrwc2uk"
   },
   {
-    startDate: "Aprile 2019",
-    endDate: "Dicembre 2019",
+    startDate: "April 2019",
+    endDate: "December 2019",
     jobTitle: "Front-End Developer",
     agency: "Abstract",
     location: "Bologna, Italia",
@@ -78,7 +81,8 @@ export const Experiences = [
         link: "https://www.svemea-dev.instore.oakley.com/sv/10029/it-IT",
         description: "Maintenance"
       }
-    ]
+    ],
+    logoUrl: "https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/xwq8aow96ybnz7ikprvp"
   },
   {
     startDate: "November 2016",
@@ -114,7 +118,8 @@ export const Experiences = [
       {
         name: "internal tool for developer"
       }
-    ]
+    ],
+    logoUrl: 'https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ka2oa4yjn7k2eospwi89'
   },
   {
     startDate: "May 2018",
