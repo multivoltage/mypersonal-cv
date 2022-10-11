@@ -3,7 +3,7 @@ export const Me_Info = {
   surname: "Tonini",
   age: 25,
   birthday: "May 1, 1993",
-  location: "Milano",
+  location: "Milano/Rimini",
   phone: "+39 3891883138",
   email: "diego.tonini93@gmail.com",
   linkedin: "https://bit.ly/2C9VQQi",
@@ -26,7 +26,7 @@ export const Experiences = [
   {
     startDate: "January 2020",
     endDate: "Present",
-    jobTitle: "Front-End Developer",
+    jobTitle: "Senior Front-End Developer",
     agency: "Conio srl",
     location: "Milano, Italia",
     skillsTags: [
@@ -39,10 +39,22 @@ export const Experiences = [
       "react-apollo",
       "typescript"
     ],
-    shortDescription: "Responsible for all frontend apps. This include an Admin Panel and the company site",
-    longDescription: "Develop and maintenance of an admin panel in React + GraphQL + Apollo. Sometimes I switch to Android (java) company applicatio (Conio on playtore)",
-    projects: [],
-    logoUrl: "https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/vpnffetwddcypsrwc2uk"
+    shortDescription: "Responsible for all frontend apps. This includes some internal and external backoffices, company site and custom emails.",
+    longDescription: `
+      Thanks to the promising junior frontend :), I:
+      Lead of company site (full NextJS + TS + headless cms Storyblok, hosted with Amplify.
+      <br/>Lead of B2B backoffice used by Conio and partner (React + TS + GraphQL + apollo + cypress).
+      <br/>Lead of B2C backoffice used by Conio for OTC service (same stack).
+      <br/>Maintenance of responsive transactionals emails (custom gulp.js project).
+      <br/>Drink a good beers with colleagues in the evening, and try to explain to new colleagues that crypto will be the future.`,
+    projects: [
+      {
+        name: "Company Site",
+        link: "www.conio.com",
+        description: "Frontend release"
+      },
+    ],
+    logoUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGdP_IqHrZmVg/company-logo_200_200/0/1649323124980?e=1673481600&v=beta&t=4tgrh663lLRnI1DmpAoXZTy8mjb3BvfX-U09eGAvQI0"
   },
   {
     startDate: "April 2019",
@@ -160,7 +172,9 @@ export const Experiences = [
 ];
 
 export const Skills = [
+  { tag: "typescript", value: 7 },
   { tag: "js", value: 7 },
+  { tag: "next js", value: 7 },
   { tag: "react", value: 7 },
   { tag: "vue", value: 7 },
   { tag: "redux", value: 7 },

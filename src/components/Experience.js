@@ -31,7 +31,7 @@ class Experience extends Component {
             </p>}
             {longDescription && <p className="content--wrapper__description">
                 <i class="material-icons">description</i>
-                <span className="experience--place">{longDescription}</span>
+                <span className="experience--place" dangerouslySetInnerHTML={{ __html: longDescription}} />
             </p>}
             {skillsTags.length && <p className="content--wrapper__skillsTags">
               <i class="material-icons">code</i>

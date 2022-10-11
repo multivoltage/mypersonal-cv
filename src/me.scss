@@ -3,7 +3,7 @@
 .me--row {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   font-weight: 500;
   align-items: center;
   font-size: 1.4em;
@@ -27,6 +27,7 @@
     border-radius: 50%;
     border: 2px dotted $primaryColor;
     padding: 1em;
+    width: 200px;
   }
 
   .icon-linkedin {

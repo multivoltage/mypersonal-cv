@@ -87,14 +87,18 @@
 
       .projectLink,
       .projectName {
-        flex-basis: 50%;
         white-space: nowrap;
+      }
+
+      .projectName {
+        flex-basis: 40%;
       }
 
       .projectLink {
         margin-left: 1em;
-        text-align: right;
         color: $secondaryColor;
+        flex-basis: 60%;
+        text-align: left;
       }
     }
   }

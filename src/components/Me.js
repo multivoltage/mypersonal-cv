@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "../me.scss";
 
 const image_url =
-  "https://media.licdn.com/dms/image/C5103AQG9OzZVZYLoxw/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=_BcalLnfAP2VECjyvHpJwxUJ67U9-U7ClnT6Ml59Im0";
+  "https://media-exp1.licdn.com/dms/image/C5103AQG9OzZVZYLoxw/profile-displayphoto-shrink_400_400/0/1517352441228?e=1671062400&v=beta&t=A4dB3BPEThBfyRxheB2mT_5XAAlyXJp1qlGhtH-OQjg";
 
 class Me extends Component {
   render() {

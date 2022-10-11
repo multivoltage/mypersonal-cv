@@ -33,7 +33,7 @@ class App extends Component {
 
         <div className="page page2 lastPage sizeA4">
           <main>
-            <section className="experiences">
+            <section className="experiences" style={{ marginTop: "4rem"}}>
               <h2 className="title">EXPERIENCE</h2>
               {this.renderExperiences(0, 2)}
             </section>
@@ -41,8 +41,8 @@ class App extends Component {
         </div>
 
         <div className="page page2 sizeA4">
-          <main>
-            <section className="experiences">
+          <main style={{ marginTop: "12rem"}}>
+            <section className="experiences" style={{ paddingTop: "8rem"}}>
               <h2 className="title">EXPERIENCE</h2>
               {this.renderExperiences(2, 4)}
             </section>
@@ -111,6 +111,10 @@ const Description = () => (
       I saw a lot of similar cv, and I like problem solving, from mathematical
       games to the code of a program to create a cv in pdf without using
       illustrator (like this).
+    </p>
+
+    <p>
+      I strongly believe in cryptocurrencies. If you disagree, write me.
     </p>
   </section>
 );
