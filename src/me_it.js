@@ -41,16 +41,16 @@ export const Experiences = [
     ],
     shortDescription: "Responsible for all frontend apps. This includes some internal and external backoffices, company site and custom emails.",
     longDescription: `
-      Thanks to the promising junior frontend :), I:
-      Lead of company site (full NextJS + TS + headless cms Storyblok, hosted with Amplify.
-      <br/>Lead of B2B backoffice used by Conio and partner (React + TS + GraphQL + apollo + cypress).
-      <br/>Lead of B2C backoffice used by Conio for OTC service (same stack).
-      <br/>Maintenance of responsive transactionals emails (custom gulp.js project).
-      <br/>Drink a good beers with colleagues in the evening, and try to explain to new colleagues that crypto will be the future.`,
+      - Lead of company site (full NextJS + TS + headless cms Storyblok cms, hosted with Amplify.
+      <br/>- Lead of B2B backoffice used by Conio and partner (React + TS + GraphQL + apollo + cypress).
+      <br/>- Lead of B2C backoffice used by Conio for OTC service (same stack but with react-query).
+      <br/>- Mentor for the only one junior frontend even if he's very good.
+      <br/>- Maintenance of responsive transactionals emails (custom gulp.js project).
+      <br/>- Drink a good beers with colleagues in the evening, and try to explain to new colleagues that crypto will be the future.`,
     projects: [
       {
         name: "Company Site",
-        link: "www.conio.com",
+        link: "https://www.conio.com/",
         description: "Frontend release"
       },
     ],
@@ -76,7 +76,7 @@ export const Experiences = [
     shortDescription:
       "development and release of applications installed in fairs and physical stores on behalf of Luxottica",
     longDescription:
-      "I deal mainly with the maintenance of projects developed with React. The sites are formed by an ui project and an api project. The first one is developed in react and grapql and the second one is developed in express + typescript + redis. The sites are developed for the totem used in a Luxottica brands stores",
+      "- I deal mainly with the maintenance of projects developed with React. The sites are formed by an ui project and an api project. The first one is developed in react and grapql and the second one is developed in express + typescript + redis. The sites are developed for the totem used in a Luxottica brands stores",
     projects: [
       {
         name: "Rayban (e-commerce)",
