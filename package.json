@@ -1,7 +1,7 @@
 {
   "name": "mypersonal-cv",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "node-sass": "^4.14.1",
     "react": "^16.6.3",
