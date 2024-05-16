@@ -11,15 +11,15 @@ export const Me_Info = {
   schools: [
     {
       name: "Certificate in Computer Science at Itis Valturio, Rimini",
-      period: "2009-2013"
+      period: "2009-2013",
       //resultTitle: "Certificate in Computer Science at Itis Valturio, Rimini"
     },
     {
       name: "Degree in computer engineering at Cesena",
-      period: "2013-2016"
+      period: "2013-2016",
       //resultTitle: "Degree in computer engineering at Cesena"
-    }
-  ]
+    },
+  ],
 };
 
 export const Experiences = [
@@ -37,24 +37,26 @@ export const Experiences = [
       "less",
       "typescript+",
       "react-apollo",
-      "typescript"
+      "typescript",
     ],
-    shortDescription: "Responsible for all frontend apps. This includes some internal and external backoffices, company site and custom emails.",
+    shortDescription:
+      "Responsible for all frontend apps. This includes some internal and external backoffices, company site and custom emails.",
     longDescription: `
-      - Lead of company site (full NextJS + TS + headless cms Storyblok cms, hosted with Amplify.
-      <br/>- Lead of B2B backoffice used by Conio and partner (React + TS + GraphQL + apollo + cypress).
-      <br/>- Lead of B2C backoffice used by Conio for OTC service (same stack but with react-query).
-      <br/>- Mentor for the only one junior frontend even if he's very good.
+      - Lead of company site (full NextJS  + TS + Storyblock cms, hosted with Vercel).
+      <br/>- Lead of B2B backoffices used by Conio and partner (React + TS + GraphQL + apollo + cypress).
+      <br/>- Creation of tools to increase productivity by automating tasks (Node js).
+      <br/>- Use of HSM keys in the browser running custom firmware to resolve multipart-sign process.
       <br/>- Maintenance of responsive transactionals emails (custom gulp.js project).
       <br/>- Drink a good beers with colleagues in the evening, and try to explain to new colleagues that crypto will be the future.`,
     projects: [
       {
         name: "Company Site",
         link: "https://www.conio.com/",
-        description: "Frontend release"
+        description: "Frontend release",
       },
     ],
-    logoUrl: "https://media-exp1.licdn.com/dms/image/C4E0BAQGdP_IqHrZmVg/company-logo_200_200/0/1649323124980?e=1673481600&v=beta&t=4tgrh663lLRnI1DmpAoXZTy8mjb3BvfX-U09eGAvQI0"
+    logoUrl:
+      "https://media.licdn.com/dms/image/D4D0BAQF68-WEFB0KLg/company-logo_200_200/0/1697810707337/conio_logo?e=1723680000&v=beta&t=ylROpVV1Nn7fnVsy4WSOmLEzB37DzgpPI7cjx9cY6J0",
   },
   {
     startDate: "April 2019",
@@ -71,7 +73,7 @@ export const Experiences = [
       "sass",
       "typescript+",
       "redis",
-      "WCS"
+      "WCS",
     ],
     shortDescription:
       "development and release of applications installed in fairs and physical stores on behalf of Luxottica",
@@ -81,20 +83,21 @@ export const Experiences = [
       {
         name: "Rayban (e-commerce)",
         link: "https://www.ray-ban.com/italy",
-        description: "Frontend release"
+        description: "Frontend release",
       },
       {
         name: "Rayban (totem app)",
         link: "https://www.rbemea.instore.oakley.com/rb/10523/it-IT",
-        description: "Maintenance"
+        description: "Maintenance",
       },
       {
         name: "Salmoiraghi & Vigano (totem app)",
         link: "https://www.svemea-dev.instore.oakley.com/sv/10029/it-IT",
-        description: "Maintenance"
-      }
+        description: "Maintenance",
+      },
     ],
-    logoUrl: "https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/xwq8aow96ybnz7ikprvp"
+    logoUrl:
+      "https://media.licdn.com/dms/image/C4D0BAQHcVNqY2kDhiQ/company-logo_100_100/0/1677590776638/abstract_logo?e=1723680000&v=beta&t=1LUwQlmc1Jn41dzPQBrk0UY3ZD1ZuvaG821ryG0yYkc",
   },
   {
     startDate: "November 2016",
@@ -110,28 +113,29 @@ export const Experiences = [
       {
         name: "Moncler",
         link: "www.moncler.com",
-        description: "Maintenance and platform migration (.net)"
+        description: "Maintenance and platform migration (.net)",
       },
       {
         name: "Missoni",
         link: "www.missoni.com",
-        description: "Maintenance and accessibility (.net)"
+        description: "Maintenance and accessibility (.net)",
       },
       {
         name: "Stone Island",
         link: "www.stoneisland.com",
-        description: "Maintenance (.net)"
+        description: "Maintenance (.net)",
       },
       {
         name: "Stoneisland30",
         link: "www.stoneisland30.com",
-        description: "Release (react gatsby redux)"
+        description: "Release (react gatsby redux)",
       },
       {
-        name: "internal tool for developer"
-      }
+        name: "internal tool for developer",
+      },
     ],
-    logoUrl: 'https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ka2oa4yjn7k2eospwi89'
+    logoUrl:
+      "https://media.licdn.com/dms/image/C560BAQHEycdf5lQRrA/company-logo_100_100/0/1631341052696?e=1723680000&v=beta&t=zTS4zLQXA9LnVwh0e6T337pyWGvVw4TpekMPnF-RkMc",
   },
   {
     startDate: "May 2018",
@@ -147,9 +151,9 @@ export const Experiences = [
       {
         name: "Water Comminity",
         description:
-          "Web-app built with react to handle the management and clean of a wc in a smart way"
-      }
-    ]
+          "Web-app built with react to handle the management and clean of a wc in a smart way",
+      },
+    ],
   },
   {
     startDate: "July 2016",
@@ -158,7 +162,7 @@ export const Experiences = [
     agency: "PianetaItalia.com",
     location: "Rimini, Italy",
     shortDescription: "Realization from scratch of native android application",
-    skillsTags: ["java", "android-studio"]
+    skillsTags: ["java", "android-studio"],
   },
   {
     startDate: "April 2016",
@@ -167,8 +171,8 @@ export const Experiences = [
     agency: "PianetaItalia.com",
     location: "Rimini, Italy",
     shortDescription: "Realization from scratch of native android application",
-    skillsTags: ["java", "android-studio"]
-  }
+    skillsTags: ["java", "android-studio"],
+  },
 ];
 
 export const Skills = [
@@ -198,40 +202,45 @@ export const Skills = [
   { tag: "graphQL", value: 7 },
   { tag: "redis", value: 7 },
   { tag: "styled-component", value: 7 },
-  { tag: "someThingOfNew-please", value: 7 }
+  { tag: "someThingOfNew-please", value: 7 },
 ];
 
 export const Projects = [
   {
+    name: "react-use-zendesk",
+    url: "https://www.npmjs.com/package/react-use-zendesk",
+    description: "React Zendesk Web Widget integration written in typescript.",
+  },
+  {
     name: "react-imagezoomable",
     url: "https://bit.ly/2S2vSUE",
     description:
-      "a performing library for display a larger image zoom layer without change ratio"
+      "a performing library for display a larger image zoom layer without change ratio",
   },
   {
     name: "adflyroboTOR",
     url: "https://bit.ly/2UR3Wol",
     description:
-      "an experiment with tor network and test automation to click a banner, changing ip every time"
+      "an experiment with tor network and test automation to click a banner, changing ip every time",
   },
   {
     name: "Musicat",
     url: "https://bit.ly/2CklG48",
     description:
-      "Good music player for android with unique feature like bubble (like fb) and streaming server listening"
+      "Good music player for android with unique feature like bubble (like fb) and streaming server listening",
   },
   {
     name: "spending-division",
     url: "https://bit.ly/2EBRi86",
     description:
-      "a react application built for make easy the process of divide a spending when you live with other people"
+      "a react application built for make easy the process of divide a spending when you live with other people",
   },
   {
     name: "gianni-accordion-js",
     url: "https://github.com/multivoltage/gianni-accordion-js",
     description:
-      "a perfomance pure js accordion developed based with accessibility"
-  }
+      "a perfomance pure js accordion developed based with accessibility",
+  },
 ];
 
 export default Me_Info;
