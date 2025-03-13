@@ -105,6 +105,7 @@ section.projects,
 section.skills,
 section.experiences,
 section.school,
+section.coolThings,
 section.description {
   font-weight: 500;
   line-height: 1.5em;
@@ -121,7 +122,8 @@ section.experiences {
   // margin-top: 8rem;
 }
 
-section.school {
+section.school,
+section.coolThings {
   margin-top: 3em;
 
   ul {

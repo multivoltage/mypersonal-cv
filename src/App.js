@@ -8,9 +8,10 @@ class App extends Component {
   renderExperiences(from, to) {
     return (
       <ul className="list-experiences">
-        {Experiences.filter((el, i) => i >= from && i < to).map(e => (
-          <Experience experience={e} />
-        ))}
+        {Experiences.filter((el, i) => i >= from && i < to).map((e, i) => {
+          debugger;
+          return <Experience experience={e} row={i} />;
+        })}
       </ul>
     );
   }
@@ -27,23 +28,24 @@ class App extends Component {
             <Me me={Me_Info} />
             <Description />
             <School />
+            <CoolThings />
             {/* {this.renderExperiences(0,3)} */}
           </main>
         </div>
 
         <div className="page page2 lastPage sizeA4">
           <main>
-            <section className="experiences" style={{ marginTop: "4rem"}}>
-              <h2 className="title">EXPERIENCE</h2>
+            <section className="experiences" style={{ marginTop: "4rem" }}>
+              <h2 className="title">EXPERIENCES</h2>
               {this.renderExperiences(0, 2)}
             </section>
           </main>
         </div>
 
         <div className="page page2 sizeA4">
-          <main style={{ marginTop: "12rem"}}>
-            <section className="experiences" style={{ paddingTop: "8rem"}}>
-              <h2 className="title">EXPERIENCE</h2>
+          <main style={{ marginTop: "12rem" }}>
+            <section className="experiences" style={{ paddingTop: "3rem" }}>
+              {/* <h2 className="title">EXPERIENCES</h2> */}
               {this.renderExperiences(2, 4)}
             </section>
 
@@ -51,7 +53,7 @@ class App extends Component {
               <section className="skills">
                 <h2 className="title">SKILLS</h2>
                 <ul className="skills-list">
-                  {Skills.map(s => (
+                  {Skills.map((s) => (
                     <span>{s.tag}</span>
                   ))}
                 </ul>
@@ -59,7 +61,7 @@ class App extends Component {
               <section className="projects">
                 <h2 className="title">MY PROJECTS</h2>
                 <ul className="projects-list">
-                  {Projects.map(p => (
+                  {Projects.map((p) => (
                     <li className="project--row">
                       <span className="project--name">{p.name}</span>
                       <span className="project--url">{p.url}</span>
@@ -73,14 +75,6 @@ class App extends Component {
             </div>
 
             {/* <img className="firma" src="./firma.png"/> */}
-
-            <footer>
-              <p>
-                In compliance with the Italian legislative Decree no. 196 dated
-                30/06/2003, I hereby authorize you to use and process my
-                personal details contained in this document
-              </p>
-            </footer>
           </main>
         </div>
       </div>
@@ -98,14 +92,13 @@ const Description = () => (
     </p>
     <div className="horizontal--divider" />
     <p>
-      I am a skydiver so I expect a dynamic job, risky but above all not
-      monotonous. I love people, I love working together and creating something
-      out of the business environment.
+      I love people, I love working together and creating something out of the
+      business environment.
     </p>
     <div className="horizontal--divider" />
     <p>
       I am optimistic and I am going to sleep with the thought that sooner or
-      later I will have a revolutionary idea.
+      later I will have a revolutionary idea (BigG stole one from me 😄 ).
     </p>
     <p>
       I saw a lot of similar cv, and I like problem solving, from mathematical
@@ -113,23 +106,48 @@ const Description = () => (
       illustrator (like this).
     </p>
 
-    <p>
-      I strongly believe in cryptocurrencies. If you disagree, write me.
-    </p>
+    <p>I strongly believe in cryptocurrencies. If you disagree, write me.</p>
+    <p>I do skydive as hobby.</p>
   </section>
 );
 
-const School = props => {
+const School = (props) => {
   return (
     <section className="school">
       <h2 className="title">SCHOOL</h2>
       <ul className="schoolList">
-        {Me_Info.schools.map(s => {
+        {Me_Info.schools.map((s) => {
           return (
             <li className="colum" key={s.Name}>
               <span>{s.name}</span>
               <span>{s.period}</span>
               <span>{s.resultTitle}</span>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+};
+
+const CoolThings = (props) => {
+  return (
+    <section className="coolThings">
+      <h2 className="title">COOL THINGS I DID</h2>
+      <ul
+        style={{
+          display: "block",
+        }}
+      >
+        {Me_Info.coolThings.map((s) => {
+          return (
+            <li
+              key={s}
+              style={{
+                listStyle: "disc",
+              }}
+            >
+              {s}
             </li>
           );
         })}
