@@ -31,7 +31,7 @@
   }
 
   .icon-linkedin {
-    background-image: url("https://freeiconshop.com/wp-content/uploads/edd/linkedin-outline.png");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png");
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
@@ -39,7 +39,7 @@
   }
 
   .icon-github {
-    background-image: url("http://www.download82.com/images/produse/iconuri/github-desktop.png");
+    background-image: url("https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png");
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
@@ -58,6 +58,10 @@
     a {
       text-decoration: none;
       color: $grey700;
+      text-overflow: ellipsis;
+      overflow: hidden; 
+      // max-width: 500px; 
+      white-space: nowrap;
     }
 
     .text {

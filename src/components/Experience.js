@@ -22,7 +22,6 @@ class Experience extends Component {
     if (row === 1) {
       marginTop = 100;
     }
-    debugger;
 
     return (
       <li

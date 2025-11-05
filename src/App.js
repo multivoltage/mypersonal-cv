@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <ul className="list-experiences">
         {Experiences.filter((el, i) => i >= from && i < to).map((e, i) => {
-          debugger;
           return <Experience experience={e} row={i} />;
         })}
       </ul>
@@ -64,7 +63,7 @@ class App extends Component {
                   {Projects.map((p) => (
                     <li className="project--row">
                       <span className="project--name">{p.name}</span>
-                      <span className="project--url">{p.url}</span>
+                      <a href={p.url}><span className="project--url">{p.url}</span></a>
                       <span className="project--description">
                         {p.description}
                       </span>
@@ -98,12 +97,11 @@ const Description = () => (
     <div className="horizontal--divider" />
     <p>
       I am optimistic and I am going to sleep with the thought that sooner or
-      later I will have a revolutionary idea (BigG stole one from me 😄 ).
+      later I will have a revolutionary idea (BigG stoled one from me 😄 ).
     </p>
     <p>
-      I saw a lot of similar cv, and I like problem solving, from mathematical
-      games to the code of a program to create a cv in pdf without using
-      illustrator (like this).
+      I saw a lot of similar cv, and since I like problem solving, so I created a cv in pdf without using
+      illustrator/adobe (like this).
     </p>
 
     <p>I strongly believe in cryptocurrencies. If you disagree, write me.</p>

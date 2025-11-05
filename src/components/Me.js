@@ -3,8 +3,7 @@ import React, { Component } from "react";
 import "../me.scss";
 
 const image_url =
-  "https://media.licdn.com/dms/image/v2/D4D03AQETL-8cMKx_qQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715851254740?e=1747267200&v=beta&t=zC1Du1oAhmRkrA6NMgoMHVS_vKZcypz9U-z7Np19UMI";
-
+  "https://media.licdn.com/dms/image/v2/D4D03AQETL-8cMKx_qQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715851254740?e=1764201600&v=beta&t=GYq9bM_D8o_esxT96h8WCT7wRjUX4c9KQxbX1kHI-lo"
 class Me extends Component {
   render() {
     const { phone, email, linkedin, github, location } = this.props.me;

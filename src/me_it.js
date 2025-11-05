@@ -3,11 +3,11 @@ export const Me_Info = {
   surname: "Tonini",
   age: 25,
   birthday: "May 1, 1993",
-  location: "Rimini",
+  location: "Torino",
   phone: "+39 3891883138",
   email: "diego.tonini93@gmail.com",
-  linkedin: "https://bit.ly/2C9VQQi",
-  github: "https://bit.ly/2QDoguY",
+  linkedin: "https://www.linkedin.com/in/diego-tonini-6182a6114/",
+  github: "https://github.com/multivoltage",
   schools: [
     {
       name: "Certificate in Computer Science at Itis Valturio, Rimini",
@@ -23,7 +23,7 @@ export const Me_Info = {
   coolThings: [
     "Built from scratch a complete job section on company site which able HR team to handle/create/edit jobs application with also confirmation emails",
     "Setup pipelines for each pullrequest in my company projects (easy but with a lot of value)",
-    "Try to create an automatic job to sync our CMS (storybook) with specific S3 bucket, avoiding paying much money for the same feature",
+    "Setup a custom and automatic backup flow to sync our CMS (storybook) with specific S3 bucket, avoiding paying much money for the same feature",
     "Created an SDK for company site and dashboards and maintained as npm package. It use a open api schema for endpoint and provide an easy method to handle authentication and expired tokens",
     "Setup a lot of e2e tests espacially one for a killer feature mocking HID devices",
     "Repacked an old exported create-react-app project",
@@ -37,7 +37,7 @@ export const Experiences = [
     endDate: "Present",
     jobTitle: "Senior Front-End Developer",
     agency: "Conio srl",
-    location: "Milano, Italia",
+    location: "Milano/Remote, Italia",
     skillsTags: [
       "bitcoin",
       "crypto",
@@ -65,7 +65,33 @@ export const Experiences = [
       },
     ],
     logoUrl:
-      "https://media.licdn.com/dms/image/v2/D4D0BAQF68-WEFB0KLg/company-logo_100_100/company-logo_100_100/0/1697810707337/conio_logo?e=1749686400&v=beta&t=CfaWisxYWjo85D94SeTQPI_w2uv_v5DaIDPLorpMesE",
+      "/conio_logo.jpeg"
+  },
+  {
+    startDate: "January 2025",
+    endDate: "Present",
+    jobTitle: "Mobile Developer and Co-founder",
+    agency: "Air Coach",
+    location: "Remote",
+    skillsTags: [
+      "AI",
+      "react-native",
+      "typescript",
+      "expo"
+    ],
+    shortDescription:
+      "With friends we try to delivery a chat app with the goal to help new skydivers in this new world",
+    longDescription: `
+      - Responsible for the native app. Built with expo. User base is handled by Auth0 as provider`,
+    projects: [
+      {
+        name: "Company Site (Private beta)",
+        link: "https://www.air-coach.com/",
+        description: "Frontend release",
+      },
+    ],
+    logoUrl:
+      "/logo-air-coach-full.webp"
   },
   {
     startDate: "April 2019",
@@ -106,7 +132,7 @@ export const Experiences = [
       },
     ],
     logoUrl:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQHcVNqY2kDhiQ/company-logo_100_100/company-logo_100_100/0/1677590776638/abstract_logo?e=1749686400&v=beta&t=uUc9Oc-tBeHCnzm4e5CEkNYHK9Spd2DvMAp0-2Q2NaU",
+      "/abstract_logo.jpeg",
   },
   {
     startDate: "November 2016",
@@ -144,7 +170,7 @@ export const Experiences = [
       },
     ],
     logoUrl:
-      "https://media.licdn.com/dms/image/v2/C560BAQHEycdf5lQRrA/company-logo_100_100/company-logo_100_100/0/1631341052696?e=1749686400&v=beta&t=SCf7CXiH7TAqwpfYKDM5koH242FPhO0PZHUa8Aabmo0",
+      "/yoox_logo.jpeg",
   },
   {
     startDate: "May 2018",
